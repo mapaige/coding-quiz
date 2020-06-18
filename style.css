@@ -1,0 +1,44 @@
+#directions {
+  font-weight:bold;
+  margin: auto;
+  text-align: center;
+}
+
+ h1 {
+  margin: auto;
+  padding: 20px;
+  width:50%;
+  text-align: center;
+  color: #240ea0;
+}
+
+#button1 {
+  text-align: center;
+}
+.p-3 {
+  border-radius: 40px;
+  text-align: center;
+}
+
+ol {
+  width:50%;
+  margin:auto;
+  list-style-type: none;
+  font-size:20px;
+}
+
+.Q1 {
+  color:grey;
+}
+
+.Q2 {
+  color:green;
+}
+
+.Q3 {
+  color: rgba(56, 56, 56, 0.952);
+}
+
+.Q4 {
+  color: rgb(240, 48, 48);
+}
