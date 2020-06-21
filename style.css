@@ -6,6 +6,15 @@
   
 }
 
+#choices {
+  
+  color: blue;
+  text-align: left;
+  }
+  
+  
+ 
+
 .hide {
   display :none;
 }
@@ -31,7 +40,7 @@
   padding: 20px;
   width:50%;
   text-align: center;
-  color: #240ea0;
+  color:orangered;
 }
 
 #button1 {
