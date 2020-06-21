@@ -1,8 +1,30 @@
+.highScore {
+  color: blue;
+  font-weight: bolder;
+  margin-bottom: 0;
+
+  
+}
+
+.hide {
+  display :none;
+}
+
+.time {
+  margin-top: 0;
+  text-align: right;
+  color: blue;
+  font-weight: bolder;
+  
+}
+
 #directions {
   font-weight:bold;
   margin: auto;
   text-align: center;
 }
+
+
 
  h1 {
   margin: auto;
@@ -42,3 +64,4 @@ ol {
 .Q4 {
   color: rgb(240, 48, 48);
 }
+

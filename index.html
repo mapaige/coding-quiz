@@ -7,15 +7,28 @@
   <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-<!-- JS, Popper.js, and jQuery -->
+<!-- JS jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
 
+  
+
 </head>
 <body> 
-  
+  <div class="row">
+    <div class="col-sm-6 text-left">
+      <h6 class="highScore" >View high scores</h6> 
+    </div>
+    <div class="col-sm-6 text-right">
+      <h6 class="time"  ></h6>
+    </div>
+  </div>
+ 
+
+  <div class="container">
+    
+<div  id="start-div">
   <h1>JS Coding Quiz</h1>
   <div id ="directions">
     Let's test your Javascript skills! 
@@ -25,41 +38,54 @@
     <br>
   </div>
 
-  <div id ="button1">
-   <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> Click here to begin!</a>
+  <div id="button1">
+   <a href="#" id="start" class =" btn btn-primary btn-lg active" role="button" aria-pressed="true"> Click here to begin!</a>
   </div>
-   <h1 class="Q1">1. <em>var</em> in Javascript means:</h1>
-
-    <ol >
-      <li div class="p-3 mb-2 bg-primary text-white" id="button1"> coding</li></div>
-      <li div class="p-3 mb-2 bg-secondary  text-white"> variable</li></div>
-      <li div class="p-3 mb-2 bg-primary text-white"> expressions</li></div>
-      <li div class="p-3 mb-2 bg-secondary  text-white"> argument</li><div>
-    </ol>
+</div>
   
-  
-  <h1 class="Q2">2. Which one is not a data type:</h1>
-    <ol>
-      <li div class="p-3 mb-2 bg-warning text-dark"> number</li></div>
-      <li div class="p-3 mb-2 bg-success text-white">  Beelean</li></div>
-      <li div class="p-3 mb-2 bg-warning text-dark">  String</li></div>
-      <li div class="p-3 mb-2 bg-success text-white"> Null</li><div>
-    </ol>
+    <div id="question-div" class="hide">
+      <h1 id="Q" > </h1>
+        <ol id="choices">
+          <!-- <li div class="p-3 mb-2 bg-primary text-white" id="button1"> coding</li></div>
+          <li div class="p-3 mb-2 bg-secondary  text-white"> variable</li></div>
+          <li div class="p-3 mb-2 bg-primary text-white"> expressions</li></div>
+          <li div class="p-3 mb-2 bg-secondary  text-white"> argument</li><div> -->
+        </ol>
 
-  <h1 class="Q3">3. i++ is:</h1>
-    <ol>
-      <li div class="p-3 mb-2 bg-light text-dark">  Name short for C++</li></div>
-      <li div class="p-3 mb-2 bg-dark text-white">  increment</li></div>
-      <li div class="p-3 mb-2 bg-light text-dark">  decrement</li>
-      <li div class="p-3 mb-2 bg-dark text-white">  argruments</li>
-    </ol>
+    </div>
+      
+       
+    
+    
+        <!-- <h1 class="Q2">2. Which one is not a data type:</h1>
+        <ol>
+          <li div class="p-3 mb-2 bg-warning text-dark"> number</li></div>
+          <li div class="p-3 mb-2 bg-success text-white">  Beelean</li></div>
+          <li div class="p-3 mb-2 bg-warning text-dark">  String</li></div>
+          <li div class="p-3 mb-2 bg-success text-white"> Null</li><div>
+        </ol>
+        
 
-  <h1 class="Q4"> 4. An array :</h1>
-    <ol>
-      <li div class="p-3 mb-2 bg-danger text-white"> is a collection of values.</li></div>
-      <li div class="p-3 mb-2 bg-white text-dark"> index starts at 0.</li></div>
-      <li div class="p-3 mb-2 bg-danger text-white"> all of them.</li></div>
-      <li div class="p-3 mb-2 bg-white text-dark"> can have mixed values.</li></div>
-  </ol>
-</body>
+
+        <h1 class="Q3">3. i++ is:</h1>
+        <ol>
+          <li div class="p-3 mb-2 bg-light text-dark">  Name short for C++</li></div>
+          <li div class="p-3 mb-2 bg-dark text-white">  increment</li></div>
+          <li div class="p-3 mb-2 bg-light text-dark">  decrement</li>
+          <li div class="p-3 mb-2 bg-dark text-white">  argruments</li>
+        </ol>
+
+        <h1 class="Q4"> 4. An array :</h1>
+        <ol>
+          <li div class="p-3 mb-2 bg-danger text-white"> is a collection of values.</li></div>
+          <li div class="p-3 mb-2 bg-white text-dark"> index starts at 0, in most cases.</li></div>
+          <li div class="p-3 mb-2 bg-danger text-white"> all of them.</li></div>
+          <li div class="p-3 mb-2 bg-white text-dark"> can have mixed values.</li></div>
+        </ol>
+        -->
+  </div>
+ 
+   
+    <script src="./script.js"></script>
+  </body>
 </html>
